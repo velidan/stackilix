@@ -1,0 +1,60 @@
+.post-box
+  display : flex
+  position : relative
+  margin-bottom : pxToRem(14)
+  font-family : Tahoma, Helvetica, Arial, sans-serif
+  font-size : pxToRem(14)
+  padding : pxToRem(10) pxToRem(10) pxToRem(25) pxToRem(10)
+
+.post-delete-icon
+  @include min-trans-all
+  display : inline-block
+  position : absolute
+  right : pxToRem(18)
+  top : pxToRem(14)
+  cursor : pointer
+  color : $danger-color
+
+  &:hover
+    color : $danger-hovered-color
+
+  &:after
+    display : inline-block
+    content : "\2715"
+    font-size : pxToRem(18)
+
+.post-content
+  flex-basis : 100%
+  font-size : pxToRem(14)
+  border : 1px solid $primary-border-color
+  margin-left : pxToRem(15)
+  padding : pxToRem(10) pxToRem(22) pxToRem(19) pxToRem(10)
+  white-space : pre-line
+
+
+.create-post-box
+  display : flex
+  flex-direction : column
+  align-items : center
+  max-width : pxToRem(560)
+  margin : 0 auto
+
+  .st-title
+    margin : pxToRem(5) 0
+
+  .slt-text-area
+    width : pxToRem(320)
+    height : pxToRem(80)
+
+  .primary.disabled
+    cursor : not-allowed
+    color : black
+
+    &:hover
+      cursor : not-allowed
+
+.post-preview
+  white-space : pre-line
+  min-height: 3rem
+  line-height: 1rem
+  font-size: 1rem

@@ -1,0 +1,29 @@
+.btn
+  @include min-trans-all
+  display : inline-block
+  cursor : pointer
+  user-select: none /* for these features we can add some autoprefixer eg. postcss */
+
+  &.disabled
+    cursor : default
+    opacity : .3
+
+  &.primary
+    padding: pxToRem(10) pxToRem(20)
+    font-size: pxToRem(12)
+    line-height: pxToRem(16)
+    border-radius: pxToRem(8)
+    border: 1px solid $primary-btn-border-color
+    background-color: $primary-btn-bg-color
+    color: $primary-app-color
+    background-clip: border-box
+    cursor: pointer
+    text-align: center
+    font-weight: 400
+    font-family: "Open Sans", sans-serif
+    transition: background-color .3s, color .3s, border .3s
+    display: inline-block
+
+    &:hover
+      border-color: $primary-btn-border-color-hovered
+      background-color: $primary-btn-bg-color-hovered

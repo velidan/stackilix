@@ -1,0 +1,9 @@
+{
+  "extends": "tslint-config-standard",
+  "defaultSeverity": "warning",
+  "rules": {
+    "semicolon": [true, "always"],
+    "quotemark": [true, "double"]
+  }
+
+}

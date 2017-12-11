@@ -1,0 +1,30 @@
+html, body
+  font-size : #{$browser-context}px
+
+main
+  display : flex
+  flex-direction : column
+  justify-content : center
+  max-width : pxToRem(960)
+  margin : 0 auto pxToRem(24)
+
+hr
+  width : 100%
+
+.tip
+  font-size : 1rem
+  text-align : center
+  color : $low-contrast-color
+  font-family : Verdana, serif
+
+  &.general
+    margin : pxToRem(25) pxToRem(10)
+
+.st-title
+  text-align : center
+  font-size : pxToRem(22)
+
+.st-title-medium
+  @extend .st-title
+  margin : pxToRem(10)
+  color : $primary-header-color

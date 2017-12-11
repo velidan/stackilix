@@ -1,0 +1,37 @@
+.vote-box
+  display : flex
+  flex-direction : column
+  align-items : center
+  margin : 0
+  padding : 0
+  list-style : none
+  text-align : left
+  width : pxToRem(50)
+
+.votes-counter
+  display : block
+  margin : pxToRem(5) 0
+  width : 100%
+  text-align : center
+  cursor : pointer
+  font-size : pxToRem(21)
+  color : $primary-contrast-color
+
+.vote-up, .vote-down
+  width : 0
+  height : 0
+  border-style : solid
+
+.vote-up
+  border-width : 0 pxToRem(12) pxToRem(20) pxToRem(12)
+  border-color : transparent transparent $primary-contrast-color transparent
+
+  &:not(.disabled):hover
+    border-color : transparent transparent $primary-contrast-color-hovered transparent
+
+.vote-down
+  border-width : pxToRem(20) pxToRem(12) 0 pxToRem(12)
+  border-color :  $primary-contrast-color transparent transparent transparent
+
+  &:not(.disabled):hover
+    border-color : $primary-contrast-color-hovered transparent transparent transparent

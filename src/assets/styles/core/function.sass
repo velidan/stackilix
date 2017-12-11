@@ -1,0 +1,4 @@
+// Function for converting a px based font-size to rem.
+@function pxToRem($size)
+  $remSize: $size / $browser-context
+  @return #{$remSize}rem

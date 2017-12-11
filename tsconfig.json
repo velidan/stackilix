@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "es2015",
+    "strict": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "vue": ["vue/dist/vue.js"],
+      "core/*": ["./src/core/*"],
+      "assets/*": ["./src/assets/*"],
+      "modules": ["./src/modules"],
+      "shared/*": ["./src/shared/*"]
+    }
+  },
+
+  "include": [
+    "./typings"
+  ],
+  "files": [
+    "./src/index.ts"
+  ],
+  "exclude": [
+    "./node_modules",
+    "**/*.spec.ts"
+  ]
+}
