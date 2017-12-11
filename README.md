@@ -26,12 +26,12 @@ I have spent a lot of time with architecture and the ecosystem so I haven't used
 - Vue-class-component that allowed us to write Single File COmponent via Typescript + some beauty class-like view
 - Development-ready system with possibility to easy scale
 
-### How to start:
+***How to start:***
 clone the project and inside the project folder execute some of these commands to install all dependencies.
 
 `$ npm install ` or `$ yarn` if you use it
 
-####Start development server
+***Start development server***
 `$ npm start` or `$ yarn start`
 the project will be available at the: http://localhost:8080/  url
 
@@ -40,12 +40,12 @@ you should see this scene in a terminal:
 
 If you see it - everything is okay and you can start hacking with Vue.
 
-###Execute production deploy
+***Execute production deploy***
 `$ npm run deploy` or `$ yarn deploy`.
 
 This will create the dist folder into the project root and create compiled files for the production. P.S. it's not 'really' production-ready configuration because there are exists a lot of things thatshould be implementd but for start it's enough.
 
-###Run tests
+***Run tests***
 `$ npm run test` or `$ yarn test`.
 
 I have used the Ava test-runner and vue-test-utils to configure the test environpment and to be sure that's everything fine I wrote a simple smoke test just to check that it works.
