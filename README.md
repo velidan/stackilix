@@ -51,8 +51,8 @@ This will create the dist folder into the project root and create compiled files
 
 I have used the Ava test-runner and vue-test-utils to configure the test environpment and to be sure that's everything fine I wrote a simple smoke test just to check that it works.
 
-**Important notes. **
+**Important notes.**
 
-Sometimes I saw that the vue/vuex/vue-class-component ts definition file can be broken/not found by ts-compiler in case of editing the styles. I have tried to check it quickly but I have found nothing about it. Probably there is some issues with ts-loader and vue definition files but I don't sure because when we start to work with the Vue components - everything is fine.
+*Sometimes I saw that the vue/vuex/vue-class-component ts definition file can be broken/not found by ts-compiler in case of editing the styles. I have tried to check it quickly but I have found nothing about it. Probably there is some issues with ts-loader and vue definition files but I don't sure because when we start to work with the Vue components - everything is fine.*
 
 This interesting thing should be investigated separatedly.
