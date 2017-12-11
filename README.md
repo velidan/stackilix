@@ -40,12 +40,12 @@ you should see this scene in a terminal:
 
 If you see it - everything is okay and you can start hacking with Vue.
 
-####Execute production deploy
+###Execute production deploy
 `$ npm run deploy` or `$ yarn deploy`.
 
 This will create the dist folder into the project root and create compiled files for the production. P.S. it's not 'really' production-ready configuration because there are exists a lot of things thatshould be implementd but for start it's enough.
 
-####Run tests
+###Run tests
 `$ npm run test` or `$ yarn test`.
 
 I have used the Ava test-runner and vue-test-utils to configure the test environpment and to be sure that's everything fine I wrote a simple smoke test just to check that it works.
