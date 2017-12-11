@@ -15,7 +15,7 @@ Here I have tried to implement Typescript into Vue project without vue-ts-loader
 
 I have spent a lot of time with architecture and the ecosystem so I haven't used any UI lib like Semantic and I haven't done some unique design because it's not useful here instead I tried to demostrate how I work with such important thing in every app like: styles, code base, architecture, file system, environpment configuration. In large project these things should be handled with very big attention to follow DRY, support and maintainability.
 
-###Features
+***Features***
 
 - Typescript. Only standard ts-loader without vue-ts-loader. + tslint
 - Webpack 3. Hot reloading in case of editing vue components + implemented hot reloading for Vuex
@@ -46,11 +46,13 @@ If you see it - everything is okay and you can start hacking with Vue.
 This will create the dist folder into the project root and create compiled files for the production. P.S. it's not 'really' production-ready configuration because there are exists a lot of things thatshould be implementd but for start it's enough.
 
 ***Run tests***
+
 `$ npm run test` or `$ yarn test`.
 
 I have used the Ava test-runner and vue-test-utils to configure the test environpment and to be sure that's everything fine I wrote a simple smoke test just to check that it works.
 
 **Important notes. **
+
 Sometimes I saw that the vue/vuex/vue-class-component ts definition file can be broken/not found by ts-compiler in case of editing the styles. I have tried to check it quickly but I have found nothing about it. Probably there is some issues with ts-loader and vue definition files but I don't sure because when we start to work with the Vue components - everything is fine.
 
 This interesting thing should be investigated separatedly.
